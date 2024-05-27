@@ -1,0 +1,10 @@
+body{
+    /* background-image: url(maxresdefault.jpeg); */
+}
+p{
+    color:gray;
+    width: 400px;  
+}
+p span{ 
+  color: aquamarine;
+}

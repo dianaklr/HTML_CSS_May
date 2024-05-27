@@ -1,0 +1,11 @@
+body{
+    /* background-image: url(maxresdefault.jpeg); */
+}
+p{
+    color: #a2bd5e;
+    width: 400px;  
+}
+span{
+    display: inline-block;
+    width: 40%;
+}
