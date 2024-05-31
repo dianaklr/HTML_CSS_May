@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            scroll-behavior: smooth;
+        }
+
+        body{
+            margin: 0;
+        }
+        div{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        a{
+            text-decoration: none;
+            font-size: 30px;
+            color: white;
+        }
+        #pink{
+            background-color: pink;
+        }
+        #yellow{
+            background-color: yellow;
+        }
+        #green{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div id="pink">
+        <a href="#yellow"> Section 2 </a>
+    </div>
+    <div id="yellow">
+        <a href="#green"> Section 3 </a>
+    </div>
+    <div id="green">
+        <a href="#pink"> Section 1 </a>
+    </div>
+</body>
+</html>
