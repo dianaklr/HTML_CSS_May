@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Orbitron", sans-serif;
+}
+/* ----------------------------header------------------------------- */
+header{
+    height: 10vh;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav{
+    width: 60%;
+}
+nav ul{
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+nav a{
+    text-decoration: none;
+    color: rgb(106, 104, 104);
+    transition: 0.5s;
+}
+nav a:hover{
+    color: rgb(68, 82, 72);
+    transition: 1s;
+}
+header div{
+    text-align: center;
+}
+/* ----------------------------section------------------------------- */
+
+section{
+    height: 90vh;
+    background-image: url(img.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+.section-first-text{
+    margin-top: 10vh;
+}
+section p{
+    font-size: 20px;
+}
+section h1{
+    font-size: 100px;
+    letter-spacing: 40px;
+    margin: 10px 0;
+}
+section button{
+    margin: 30px;
+    width: 200px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    transition: 1.5s;
+}
+section button:hover{
+    color: rgb(68, 82, 72);
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+
