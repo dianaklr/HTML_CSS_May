@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        sup{
+            color: red;
+        }
+        label{
+            display: block;
+            margin-top: 20px;
+        }
+        textarea{
+           
+            resize: none;
+        }
+       input[type="text"]{
+        padding: 0 10px;
+       }
+       input[type="password"]:focus{
+        color: aquamarine;
+        background-color: blanchedalmond;
+        outline: 2px solid pink;
+        border: 2px solid rgba(0, 0, 0, 0.086);
+        border-radius: 2px;
+       }
+       input::placeholder{
+        color: red;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       }
+       input[type="submit"]{
+        background: #60d934;
+        background-image: linear-gradient(to bottom, #60d934, #2980b9);
+        border: none;
+       }
+
+    </style>
+</head>
+<body>
+    <form>
+        <label for="username"> Введіть своє ім'я </label>
+        <input type="text" id="username" name="username" required placeholder="Іван Іванов"> <sup>*</sup>
+       
+        <label for="email"> Електронна пошта </label>
+        <input type="email" id="email" name="email" placeholder="example" > 
+       
+        <label for="password"> Пароль </label>
+        <input type="password" id="password" name="password" required placeholder="qwerty123"> <sup>*</sup>
+       
+        <label for="age"> Вік </label>
+        <input type="number" id="age" name="age" min="18" max="99"> 
+
+        <label> Cтать </label>
+
+        <label style="display: inline;"><input type="radio" id="male" name="gender"> Чоловіча </label>
+        <label style="display: inline;"><input type="radio" id="female" name="gender"> Жіноча </label>
+       
+        <label> <input type="checkbox" id="news" name="news"> Підписка на новини</label>
+        <label style="margin-top: 0;"> <input type="checkbox" id="lorem" name="lorem"> Погоджуюсь ...</label>
+
+        <label for="country">Країна</label>
+        <select id="country" name="country" required>
+            <option value="-">Виберіть країну</option>
+            <option value="lorem1">Lorem1</option>
+            <option value="lorem2">Lorem2</option>
+            <option value="lorem3">Lorem3</option>
+            <option value="lorem4">Lorem4</option>
+        </select>
+
+        <label for="comments">Введіть свій коментар:</label>
+        <textarea name="comments" id="comments" rows="4" cols="20" ></textarea>
+
+        <br>
+        <input type="submit" value="Зареєструвати">
+        <input type="reset" value="Змінив свою думку">
+    </form>
+</body>
+</html>
