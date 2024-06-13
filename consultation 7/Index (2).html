@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    width: 450px;
+    background-color: rgb(247, 247, 250);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+input[type="email"], input[type="password"]{
+    margin: 10px 10px;
+    width: 250px;
+}
+div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+input[type="text"]{
+    width: 115px;
+    margin: 10px;
+}
+p{
+    font-size: 12px;
+    width: 250px;
+    margin-top: 10px;
+    color: rgb(103, 99, 99);
+}
+input[type="submit"]{
+    width: 250px;
+    height: 20px;
+    margin: 10px 0 20px 0; 
+    background-color: yellow;
+    border-radius: 2px;
+    border: none;
+}
+a{
+    text-decoration: none;
+    color: rgb(36, 34, 34);
+}
+input::placeholder{
+    padding: 4px;
+}
+    </style>
+</head>
+<body>
+    <form>
+        <div class="text">
+        <input  type="text" placeholder="First name">
+        <input  type="text" placeholder="Last name">
+        </div>
+        <input type="email" placeholder="Email addres">
+        <input type="password" placeholder="Password (6 or more characters)">
+        <p>By clicking Join Now, you agree to Linkedin's <a href="#">User Agremment</a>, <a href="#">Privacy Policy</a> and <a href="#">Cookie Policy</a></p>
+        <input type="submit" value="Join now">
+    </form>
+</body>
+</html>

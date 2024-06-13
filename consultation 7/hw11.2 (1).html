@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        margin: 20vh auto;
+        width: 400px;
+        gap: 20px;
+    }
+    form div{
+        display: flex;
+        justify-content: space-between;
+    }
+    input{
+        height: 30px;
+        padding: 6px;
+        background: #ebebeb63;
+        border: 1px solid #ebebebaf;; 
+        border-radius: 3px;
+    }
+    input::placeholder{
+        color: #949393;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    p{
+        font-size: 12px;
+        color: #949393;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    form>input[type="submit"]{
+         background: #f7ff00;
+        background-image: -webkit-linear-gradient(top, #f7ff00, #ffcc00);
+        background-image: -moz-linear-gradient(top, #f7ff00, #ffcc00);
+        background-image: -ms-linear-gradient(top, #f7ff00, #ffcc00);
+        background-image: -o-linear-gradient(top, #f7ff00, #ffcc00);
+        background-image: linear-gradient(to bottom, #f7ff00, #ffcc00);
+        -webkit-border-radius: 3;
+        -moz-border-radius: 3;
+        border-radius: 3px;
+        font-size: 18px;
+        text-align: center;
+    }
+</style>
+<body>
+    <form>
+        <div>
+            <input type="text" name="first-name" placeholder="first name">
+            <input type="text" name="last-name" placeholder="last name">
+        </div>
+        <input type="email" name="email" placeholder="email adress">
+        <input type="password" name="password" placeholder="Password (6 or more characters)">
+        <p>By clicking Join Now, you agree to Linkedin's <a href="#">User Agreement</a>, <a href="#">Privacy Policy</a> and <a href="#">Cookie Policy</a>.</p>
+        <input type="submit" value="Join now">
+    </form>
+</body>
+</html>

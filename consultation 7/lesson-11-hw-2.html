@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 11 HW 2</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: #3B898A;
+        }
+        form{
+            margin: 20vh auto;
+            width: 500px;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+            font-weight: 500;
+            background-color: #EBF3F3;
+            text-align: center;
+            padding: 20px 0;
+            border-radius: 5px 5px 0 0;
+        }
+        .form-data{
+            display: flex;
+            flex-direction: column;
+            padding: 20px 60px 100px;
+            gap: 30px;
+        }
+        form>div>input{
+            padding: 8px 0 8px 2px;
+        }
+        .remember-me{
+            display: flex;
+            justify-content: space-between;
+        }
+        input[type="submit"]{
+            background: #EBF3F3;
+            border-radius: 15px;
+            font-family: Arial, sans-serif;
+            color: black;
+            font-size: 14px;
+            padding: 8px 40px;
+            text-decoration: none;
+            border: 1px solid #808080;
+        }
+        .chek{
+            padding-top: 8px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1>Вхід в особистий кабінет</h1>
+     <div class="form-data">
+            <input type="text" name="login" placeholder="Логін або email">
+            <input type="password" name="password" minlength="5" placeholder="Пароль">
+            <div class="remember-me">
+                <div class="chek">
+                    <label for="remember-me">Запам'ятати мене</label>
+                    <input type="checkbox" id="remember-me">
+                </div>
+                <input type="submit" autocomplete="off" value="Вхід">
+            </div>
+     </div>
+    </form>
+</body>
+</html>

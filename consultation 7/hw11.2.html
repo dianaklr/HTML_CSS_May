@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HW-11.2</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #008b8b;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1vh;
+      width: 30vw;
+      margin: 30vh auto 0 auto;
+      background: #fff;
+      min-width: 450px;
+      border-radius: 4px;
+      padding-bottom: 8vh;
+    }
+
+    p {
+      width: 100%;
+      background-color: #e9f3f3;
+      text-align: center;
+      padding: 1vh 2vw;
+      font-size: 1.8rem;
+      white-space: nowrap;
+    }
+
+    .title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      background-color: #e9f3f3;
+      height: 10vh;
+      border-radius: 4px 4px 0 0;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      padding: 2vh 4vw;
+      gap: 3vh;
+    }
+
+    .info div{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    input {
+      padding: 15px 0;
+      border: 2px solid #c4c4c4;
+    }
+
+    input[type="submit"] {
+      width: 6vw;
+      background-color: #e9f3f3;
+      padding: 1vh 2vw;
+      border: 2px solid #c4c4c4;
+      border-radius: 8px;
+      min-width: 60px;
+    }
+  </style>
+</head>
+
+<body>
+  <form action="#">
+    <p class="title"> Вхід в особистий кабінет </p>
+    <div class="info">
+      <input type="text" name="login" placeholder="Логін або email">
+      <input type="password" name="password" placeholder="Пароль">
+      <div>
+        <label for="remember">Запам'ятати мене
+
+          <input type="checkbox" name="remember" id="remember">
+        </label>
+        <input type="submit" value="Вхід"></input>
+      </div>
+    </div>
+  </form>
+</body>
+
+</html>

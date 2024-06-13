@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 11 HW 1</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            margin: 20vh auto;
+            width: 400px;
+            gap: 20px;
+        }
+        form>div>input[name="first-name"]{
+            width: 170px;
+        }
+        form>div>input[name="last-name"]{
+            width: 210px;
+        }
+        input[type="text"], [type="email"], [type="password"]{
+            font: 1.1rem "Arial",sans-serif;
+            font-weight: 600;
+            padding: 5px 5px 8px 5px;
+            background-color: rgba(128, 128, 128, 0.068);
+            border: 2px solid rgba(128, 128, 128, 0.486);
+            border-radius: 3px;
+        }
+        input[type="text"]::placeholder, [type="email"]::placeholder, [type="password"]::placeholder{
+            color: rgba(128, 128, 128, 0.74);
+        }
+        input[type="submit"]{
+            font: 1.1rem "Arial",sans-serif;
+            font-weight: 600;
+            color: rgba(0, 0, 0, 0.829);
+            padding: 5px 0;
+            border: 2px solid rgba(255, 166, 0, 0.425);
+            border-radius: 3px;
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(238,214,24,1) 0%, rgba(254,255,0,1) 100%);
+        }
+        .username{
+            display: flex;
+            justify-content: space-between;
+        }
+        form p{
+            font-size: 0.8rem;
+            color: gray;
+            margin-bottom: -10px;
+        }
+        form p a{
+            color: black;
+            text-decoration: none;
+            
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div class="username">
+            <input type="text" name="first-name" placeholder="First name">
+            <input type="text" name="last-name" placeholder="Last name">
+        </div>
+        <input type="email" name="email" autocomplete="off" placeholder="Email address">
+        <input type="password" name="password" minlength="6" placeholder="Password (6 or more characters)">
+        <p>By clicking Join Now, you agree to Linkedin's <a href="#">User Agreement</a>, <a href="#">Privacy Policy</a> and <a href="#">Cookie Policy</a>.</p>
+        <input type="submit" value="Join now">
+    </form>
+</body>
+</html>

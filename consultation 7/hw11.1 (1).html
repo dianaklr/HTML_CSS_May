@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+        }
+        body{
+            height: 100vh;
+            background-color: #00b8c5;
+            display: flex;
+            align-items: center;
+        }
+        section{
+            height: 300px;
+            width: 500px;
+            background-color: #fff;
+            border-radius: 5px;
+            margin: auto;
+
+        }
+        section h3{
+            font-family: "Roboto", sans-serif;
+            font-size: 24px;
+            font-weight: 400;
+            padding: 20px;
+            text-align: center;
+            background-color: #e4f8fa; 
+            border-radius: 5px;
+        }
+        form{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        input[type="email"], 
+        input[type="password"]{
+            width: 70%;
+            display: block;
+            padding: 6px;
+            margin: 10px;
+        }
+        form div{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            width: 70%;
+            gap: 20px;
+        }
+        /* form div label{
+            display: flex;
+            justify-content: space-between;
+        } */
+        /* form div label input{
+            height: 15px;
+            width: 10px;
+            margin: 0;
+        } */
+        .exit{
+            width: 50px;
+            height: 30px;
+            padding: 6px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h3>Вхід в особистий кабінет</h3>
+        <form>
+            <input type="email" name="email" placeholder="Логін або email">
+            <input type="password" name="password" placeholder="Пароль">
+            <div>
+                <label>Запам'ятати мене <input type="checkbox" name="memory"></label>
+                <input type="submit" value="Вхід" class="exit">
+            </div>
+        </form>
+    </section>
+</body>
+</html>

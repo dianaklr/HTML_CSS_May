@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 11-1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <style>
+        body{
+            margin: 0;  
+        }
+
+        form{
+            width: 38vw;
+            max-height: 38vw;
+            background-color: rgb(246, 245, 243);
+            margin: auto;
+            font-family: "Karla", sans-serif;  
+            padding: 10px;
+        }
+
+        input{
+            width: 98%;
+            height: 30px;
+            margin-top: 20px;
+            display: block;
+            border-radius: 3px solid grey;
+        }
+
+        div{
+            display: inline-flex;
+        }
+
+        label input{
+            width: 18vw;
+            margin-right: 10px;
+            margin-top: 30px;
+        }
+
+        p{
+            margin-top: 30px;
+            color: rgb(103, 99, 99);
+        }
+
+        a{
+            text-decoration: none;
+            color: rgb(36, 34, 34);
+        }
+        
+        button{
+            width: 100%;
+            height: 35px;
+            margin-top: 20px;
+            background: linear-gradient(176deg, rgba(248,248,89,1) 0%, rgba(212,168,31,1) 39%, rgba(217,149,28,1) 72%);
+            border-radius: 3px;
+            border: none;
+        }
+    
+
+    
+        
+    </style>
+</head>
+<body>
+    <form action="">
+        <div>
+        <label for="text">
+            <input type="text" id="username" name="username" required placeholder="First name">
+        </label>
+        <label for="text">
+            <input type="text" required placeholder="Last name">
+        </label>
+        </div>
+    <input type="email" id="email" name="email" required placeholder="Email address">
+    <input type="password" id="password" name="password" required placeholder="Password (6 or more characters)">
+    <p>By clicking Join Now,you agree to Linke din`s <a href="#">User Agreement,</a> <br> <a href="#">Privacy Policy</a> and <a href="#">Cookie Policy.</a>
+    </p>
+    <button>Join now</button>
+    </form>
+    
+</body>
+</html>

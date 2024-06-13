@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HW-11.1</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #000;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 3vh;
+      width: 40vw;
+      margin: 30vh auto 0 auto;
+      background: #fff;
+      padding: 2vh 8vw;
+      min-width: 420px;
+    }
+
+    form>div {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    input {
+      padding: 15px;
+      border: 2px solid rgb(222, 222, 222);
+      font-size: 1.2rem;
+    }
+
+    input[type="text"]:nth-child(1) {
+      width: 42%;
+    }
+
+    input[type="text"]:nth-child(2) {
+      width: 55%;
+    }
+
+    input:focus {
+      border: 0;
+      outline: 2px solid #ffc20a;
+    }
+
+    input[type="submit"] {
+      background: #e7fb06;
+      width: 100%;
+      padding: 15px;
+      font-size: 1.2rem;
+      background-image: linear-gradient(to bottom, #eded09, #ffc20a);
+      cursor: pointer;
+    }
+
+    p {
+      color: rgb(125, 125, 125);
+    }
+
+    a {
+      text-decoration: none;
+      color: #484848;
+    }
+  </style>
+</head>
+
+<body>
+  <form action="#">
+    <div>
+      <input type="text" name="first_name" placeholder="First name" required>
+      <input type="text" name="last_name" placeholder="Last name">
+    </div>
+    <input type="email" name="userEmail" placeholder="Email adress" required>
+    <input type="password" name="password" placeholder="Password (6 or more characters)" required>
+    <p> By clining join Now, you agree to Linkedin`s
+      <a href="#">User Agreement Privacy Policy</a>
+      and
+      <a href="#">Cookie Policy</a>
+    </p>
+    <input type="submit" value="Join now"></input>
+  </form>
+</body>
+
+</html>
