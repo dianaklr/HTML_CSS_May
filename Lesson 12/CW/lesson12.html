@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .pink{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            margin: 200px;
+            animation: pink-box 3s linear infinite alternate;
+        }
+
+        @keyframes pink-box {
+            0%{
+                background-color: aqua;
+                transform: translateX(0);
+            }
+            50%{
+                background-color: pink;
+                transform: translateX(50vw);
+            }
+            100%{
+                background-color: rgb(48, 48, 137);
+                transform: translateX(0);
+                
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="pink">
+
+    </div>
+</body>
+</html>
