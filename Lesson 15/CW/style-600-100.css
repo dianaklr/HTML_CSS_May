@@ -1,0 +1,6 @@
+@media screen and (min-width: 600px) and (max-width: 1000px)  {
+    .card{
+        background-color: palevioletred;
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header, footer{
+    height: 20vh;
+    background-color: gray;
+}
+
+.flex{
+    display: flex;
+}
+section, aside{
+    width: 20vw;
+    height: 60vh;
+    background-color: #8cc3c6;
+}
+main{
+    width: 60vw;
+    height: 60vh;
+    background-color: #909e9e;
+}
+.box{
+    display: none;
+}
+
+header p::after{
+    content: "desktop";
+}
+header, footer, section, aside, main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    text-align: center;
+}
