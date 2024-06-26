@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+}
+.grid{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas:  
+    "header header header"
+    "left-aside main right-aside"
+    "footer footer footer";
+    /* gap: 10px; */
+}
+
+header{
+    grid-area: header;
+    background-color: gray;
+}
+.left-aside{
+    grid-area: left-aside;
+    background: #C0BDBD;
+}
+main{
+    grid-area: main;
+    background: #A4A4A4;
+}
+.right-aside{
+    grid-area: right-aside;
+    background: #C0BDBD;
+}
+footer{
+    grid-area: footer;
+    background-color: gray;
+}
+.news{
+    display: none;
+}
