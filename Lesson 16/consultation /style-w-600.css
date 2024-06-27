@@ -1,0 +1,61 @@
+@media screen and (max-width: 600px) {
+    
+    header h3{
+        color: var(--color-primary, #F1CDB3);
+        /* logo_title */
+        font-family: Georgia;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 110%; /* 35.2px */
+        letter-spacing: 1.92px;
+    }
+    header p{
+        color: var(--color-light-xl, #FFF);
+
+    /* logo_subtitle */
+    font-family: Arial;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.3px;
+    margin-top: 10px;
+    }
+
+
+    nav{
+        display: none;
+    }
+    .header-wraper{
+        padding: 0 10px;
+    }
+
+    .header-content-wreper{
+        width: 100%;
+        flex-direction: column;
+    }
+    .header-text-content-wreper{
+        max-width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 0;
+    }
+    .header-text-content-wreper h1{
+        font-size: 25px;
+        letter-spacing: 1.5px;
+    }
+    .header-content-wreper img{
+        margin-top: 105px;
+        /* width: 100%; */
+        padding: 0 10px 0 50px;
+    }
+    .header-text-content-wreper button{
+        padding: 15px 45px;
+        border-radius: 100px;
+        background: var(--color-primary, #F1CDB3);
+        border: none;
+    }
+
+}
